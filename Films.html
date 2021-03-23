@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&display=swap" rel="stylesheet">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Enora Studio</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+/*them new letter*/
+body {font-family: Arial, Helvetica, sans-serif;}
+
+form {
+ /* border: 3px solid #f1f1f1; */
+  font-family: Arial;
+}
+
+.container {
+  padding: 20px;
+ background-color: #f1f1f1;
+}
+
+input[type=text], input[type=submit] {
+  width: 100%;
+  padding: 12px;
+
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+input[type=checkbox] {
+  margin-top: 16px;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+}
+
+input[type=submit]:hover {
+  opacity: 0.8;
+}
+/*doan nay la chinh footer ne */
+.fa {
+  padding: 10px;
+  width: 40px;
+  height: 40px;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+  font-size: 22px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.fa-instagram {
+  color: white;
+background: #f09433; 
+background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+ 
+}
+.fa-pinterest {
+  background: #cb2027;
+  color: white;
+}
+footer {
+
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+ /* color: white;*/
+  /*text-align: center;*/
+  background-color: #f2f2f2
+}
+  /* Make the image fully responsive */
+  .carousel-inner img {
+    width: 100%;
+    height: 100%;
+  }
+  video {
+  max-width: 100%;
+  height: auto;
+  }
+  #more {display: none;}
+  /* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  /*margin-top: 6px; /* Add a top margin */
+  /*margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+.row {
+  margin-right: -15px;
+  margin-left: 0;
+  /*text-align: center;*/
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover 
+{
+  background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+/*  background-color: #f2f2f2; */
+  padding: 20px;
+}
+
+  </style>
+
+  <!--javascript code-->
+  <script>
+    function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less";
+    moreText.style.display = "inline";
+  }
+}
+  </script>
+</head>
+<body>
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <!-- Brand/logo -->
+  <a class="navbar-brand" href="Task2.html" style="font-family: 'Montserrat', sans-serif;">Enora Studio</a>
+  
+  <!-- Links -->
+  <ul class="navbar-nav ml-auto">
+
+    <li class="nav-item">
+      <a class="nav-link" href="Task2.html">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="aboutus.html">About me</a>
+    </li>
+
+    <li class="nav-item">
+      <a class="nav-link" href="Films.html">Films</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="contact.html">Contact</a>
+    </li>
+
+    <form class="form-inline" action="/action_page.php">
+    <input class="form-control mr-sm-2" type="text" placeholder="Search">
+    <button class="btn btn-success" type="submit">Search</button>
+    </form>
+  <!-- Search code are here-->
+
+    
+  </ul>
+</nav>
+
+<section>
+  <br>
+<h1 style="text-align: center; background-color: lightgrey; ">Films </h1>
+<hr class="w-100"> <!-- this is line code-->
+<!-- w-100 means giving the line's width as 100% of the screen-->
+<br>
+  <div class="container">
+    <div class="row">
+      <!--3 colums with 3 img + text-->
+      <div class="col">
+        <img src="G:\pdf\photobook\000017420017.jpg" width="300" height="400">
+        <h2>Bus stop</h2>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+      </div>
+      <div class="col">
+        <img src="G:\pdf\photobook\000017420011.jpg" width="300" height="400">
+        <h2>Ha Noi Post Office</h2>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+      </div>
+      <div class="col">
+        <img src="G:\pdf\photobook\000017430018.jpg" width="300" height="400">
+        <h2>Phan Dinh Phung Street</h2>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+      </div>
+    </div>
+<br>
+    <!--img and text in row 2-->
+    <div class="row">
+      <div class="col">
+        <img src="G:\pdf\photobook\000017430006.jpg" width="300" height="400">
+        <h2>Ho Guom Lake</h2>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+      </div>
+      <div class="col">
+        <img src="G:\pdf\photobook\000017430029.jpg" width="300" height="400">
+        <h2>Ho Guom Lake</h2>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+      </div>
+      <div class="col">
+        <img src="G:\pdf\photobook\000017430008.jpg" width="300" height="400">
+        <h2>Ho Guom Lake</h2>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+      </div>
+    </div>
+  </div>
+
+</section>
+<br>
+<body>
+
+<div class="footer" >
+  <br>
+  <div class="row">
+    <div class="col">
+      <div class="row" style="padding-left: 65px;">
+        <h1 style="font-size: 120%;" > Contact me!</h1>
+        
+      </div>
+      <div class="row" style="padding-left: 50px;">
+        <a href="https://www.facebook.com/profile.php?id=100010014729992" class="fa fa-facebook" style="padding: 10px 10px;"></a>
+        <a href="https://www.instagram.com/nofunforthislife/?hl=en" class="fa fa-instagram" style="padding: 10px 10px;"></a>
+       <a href="https://www.pinterest.com/soicai_danhda/_saved/" class="fa fa-pinterest" style="padding: 10px 10px;"></a> 
+      </div>
+    </div>
+    <div class="col">
+      <div class="row">
+        <form action="/action_page.php">
+       <div class="row">
+        <h2 style="font-size: 120%; text-align: center;">Subscribe to our Newsletter</h2>
+      </div>
+
+      
+      <div class="row">
+       <input type="text" placeholder="Name" name="name" required><input type="text" placeholder="Email address" name="mail" required>
+      </div>
+      <div class="row">
+        <label>
+       <input type="checkbox" checked="checked" name="subscribe"> Daily Newsletter
+       </label>
+      </div>
+      <div class="row">
+        <input type="submit" value="Subscribe">
+        </form>
+      </div>
+    </div>
+    
+  </div>
+  
+</div>
+
+
+
+</body>
+</html>
